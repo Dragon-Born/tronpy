@@ -125,7 +125,7 @@ class Transaction(object):
         return {"txID": self.txid, "raw_data": self._raw_data, "signature": self._signature}
 
     def inspect(self) -> "Transaction":
-        pprint(self.to_json())
+        # pprint(self.to_json())
         return self
 
     def sign(self, priv_key: PrivateKey) -> "Transaction":
